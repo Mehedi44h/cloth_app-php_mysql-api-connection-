@@ -1,7 +1,7 @@
 <?php
-$serverHost="localhost";
-$user="root";
-$password="";
-$database="clothsapp";
+$serverHost = "localhost";
+$user = "root";
+$password = "";
+$database = "clothsapp";
 
-$connectNow=new mysqli($serverHost,$user,$password,$database);
+$connectNow = new mysqli($serverHost, $user, $password, $database);
