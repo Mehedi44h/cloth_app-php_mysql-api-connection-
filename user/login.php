@@ -13,7 +13,7 @@ $resultOfQuery = $connectNow->query($sqlQuery);
 if ($resultOfQuery->num_rows > 0) {
     $userRecord = array();
     while ($rowfound = $resultOfQuery->fetch_assoc()) {
-        $userRecord = $rowfound;
+        $userRecord[] = $rowfound;
     }
     echo json_encode(array(
         "success" => true,
